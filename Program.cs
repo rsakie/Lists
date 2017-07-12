@@ -39,7 +39,7 @@ namespace List
             //loop through each value
             //if the value is true print "better bring an unbrella"
             //ifthe value is false print "no rain today enjoy the sun"
-           
+
             //ex.3 list string
             //List<string> animals = new List<string>();
             //animals.Add("Lion");
@@ -70,15 +70,102 @@ namespace List
             //}
 
             //ex.5 .contains
-            List<string> favfoods = new List<string> { "Steak", "Fish", "Katsudon", "Ice cream", "Nachos" };
+            //List<string> favfoods = new List<string> { "Steak", "Fish", "Katsudon", "Ice cream", "Nachos" };
 
-            if(favfoods.Contains("Fish"))
+            //if(favfoods.Contains("Fish"))
+            //{
+            //    Console.WriteLine("I Like fish too!!");
+            //}
+
+            //ex 6.
+
+            //create a list with the following numbers: 1 23 9 77 922 6 32 63 14 5
+            //use the contains method with the following values: 23 77 15
+            // remove theses elements: 23 77 32 and 6 (look up the remove method)
+            // use Contains() again on these value: 23 77 25
+
+            //List<int> value = new List<int> { 1, 23, 9, 77, 922, 6, 32, 63, 14, 5 };
+            //if (value.Contains(23))
+            //{
+            //    Console.WriteLine("Wrong");
+            //}
+            //if (value.Contains(1))
+            //{
+            //    Console.WriteLine("its on the list");
+            //}
+            //if (value.Contains(9))
+            //{
+            //    Console.WriteLine("its on the list");
+            //}
+            //if (value.Contains(77))
+            //{
+            //    Console.WriteLine("Wrong");
+            //}
+            //if (value.Contains(922))
+            //{
+            //    Console.WriteLine("its on the list");
+            //}
+            //if (value.Contains(6))
+            //{
+            //    Console.WriteLine("its on the list");
+            //}
+            //if (value.Contains(32))
+
+            //    if (value.Contains(63))
+            //        if (value.Contains(14))
+            //            if (value.Contains(5))
+            //            {
+            //                Console.WriteLine("its on the list");
+            //                value.Remove(23);
+            //                value.Remove(77);
+            //            }
+
+            //create a list with the following numbers: 1 23 9 77 922 6 32 63 14 5
+            //use the contains method with the following values: 23 77 15
+            // remove theses elements: 23 77 32 and 6 (look up the remove method)
+            // use Contains() again on these value: 23 77 25
+
+
+            //List<int> value = new List<int> { 1, 23, 9, 77, 922, 6, 32, 63, 14, 5 };
+            //Console.WriteLine(value.Contains(23));
+            //Console.WriteLine(value.Contains(77));
+            //Console.WriteLine(value.Contains(15));
+
+            //value.Remove(23);
+            //value.Remove(77);
+            //value.Remove(32);
+            //value.Remove(6);
+
+            //Console.WriteLine(value.Contains(23));
+            //Console.WriteLine(value.Contains(77));
+            //Console.WriteLine(value.Contains(15));
+
+            //**practice
+            //ask the user for a movie
+            List<string> movie = new List<string> { "Replacements", "Wedding Crashers", "Superman", "Avatar" };
+           
+            Console.WriteLine("Please enter a Movie that you would like to rent.");
+            string movie1 = Console.ReadLine();
+
+            if(movie.Contains(movie1))
             {
-                Console.WriteLine("I Like fish too!!");
+                Console.WriteLine("Your Movie is on its way.");
             }
-
-
-
+            else
+            {
+                Console.WriteLine("That movie is not on the list, we will order that right away");
+                movie.Add(Console.ReadLine());
+            }
+            Console.WriteLine("Would you like to exit?");
+            Console.ReadLine();
+            
+            
+            //if the movie is not on the list add it
+            //if the movie is on the list inform user that the movie is on the way
+            //inform the user that the movie had been added
+            //if the user enters quit the program should exit
+            //the user should be able to add as many movies as they want
+            //when the user quits show them all the movie are being ordered
 
         }
     }
