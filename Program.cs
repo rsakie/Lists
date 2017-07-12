@@ -142,31 +142,37 @@ namespace List
 
             //**practice
             //ask the user for a movie
+            Console.WriteLine("Welcome to Movie renter");
             List<string> movie = new List<string> { "Replacements", "Wedding Crashers", "Superman", "Avatar" };
-           
+            
+
             Console.WriteLine("Please enter a Movie that you would like to rent.");
             string movie1 = Console.ReadLine();
 
-            if(movie.Contains(movie1))
+            if (movie.Contains(movie1))
             {
                 Console.WriteLine("Your Movie is on its way.");
             }
             else
             {
                 Console.WriteLine("That movie is not on the list, we will order that right away");
-                movie.Add(Console.ReadLine());
-            }
-            Console.WriteLine("Would you like to exit?");
-            Console.ReadLine();
-            
-            
-            //if the movie is not on the list add it
-            //if the movie is on the list inform user that the movie is on the way
-            //inform the user that the movie had been added
-            //if the user enters quit the program should exit
-            //the user should be able to add as many movies as they want
-            //when the user quits show them all the movie are being ordered
+                movie.Add(newMovie);
+                Console.WriteLine("We will add that movie right away");
 
+
+                Console.WriteLine("Would you like to exit?");
+                Console.ReadLine();
+
+
+
+                //if the movie is not on the list add it
+                //if the movie is on the list inform user that the movie is on the way
+                //inform the user that the movie had been added
+                //if the user enters quit the program should exit
+                //the user should be able to add as many movies as they want
+                //when the user quits show them all the movie are being ordered
+            }
+            
         }
     }
 }
